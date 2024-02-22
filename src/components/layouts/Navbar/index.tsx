@@ -36,7 +36,7 @@ export default function Navbar() {
               Find Jobs
             </Link>
             <Link href="/" className="font-medium text-gray-400 cursor-pointer">
-              Browse Company
+              Browse Companies
             </Link>
           </div>
         </div>

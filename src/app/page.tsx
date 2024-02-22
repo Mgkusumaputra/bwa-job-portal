@@ -1,7 +1,10 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import Hero from "@/components/organisms/Hero";
 
 export default function Home() {
-  return <Button>Hi</Button>;
+  return (
+    <div className="px-32">
+      <Hero />
+    </div>
+  );
 }
 
