@@ -1,17 +1,9 @@
 import { Badge } from "@/components/ui/badge";
+import { JobType } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
-interface JobItemProps {
-  image: string;
-  href: string;
-  jobType: string;
-  name: string;
-  type: string;
-  location: string;
-  desc: string;
-  categories: string[];
-}
+interface JobItemProps extends JobType {}
 
 export default function JobItem({
   image,
@@ -42,7 +34,13 @@ export default function JobItem({
       </div>
       <div className="space-x-2">
         {categories.map((item: string, key: number) => (
-          <Badge key={key}>{item}</Badge>
+          <Badge
+            key={key}
+            variant="outline"
+            className="rounded border-primary bg-primary/5 text-primary"
+          >
+            {item}
+          </Badge>
         ))}
       </div>
     </Link>
