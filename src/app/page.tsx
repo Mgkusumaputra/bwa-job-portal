@@ -1,6 +1,7 @@
 import Category from "@/components/organisms/Category";
 import Clients from "@/components/organisms/Clients";
 import Hero from "@/components/organisms/Hero";
+import SignUpBanner from "@/components/organisms/SignUpBanner";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Clients />
       <Category />
+      <SignUpBanner />
     </div>
   );
 }
